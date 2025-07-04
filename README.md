@@ -57,9 +57,30 @@ Whether it's dialogue-based content or dynamic visual scenes — this tool extra
 
 ## 🔧 Installation Instructions
 
-### 1. Clone the Repository
+1. Clone the Repository
 
 ```bash
 git clone https://github.com/shyamatyagi/yt-shorts-generator.git
 cd yt-shorts-generator
+```
+
+2. Create a Virtual Environment and Install Dependencies 
+
+```bash
+#macOS/Linux:
+python3 -m venv venv
+source venv/bin/activate
+
+# Windows:
+python -m venv venv
+venv\Scripts\activate
+
+#Then install dependencies:
+pip install -r requirements.txt
+
+```
+3. Run the FastAPI Server
+```bash
+uvicorn main:app --reload
+```
 
